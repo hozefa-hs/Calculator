@@ -32,7 +32,9 @@ class _CalculatorAppState extends State<CalculatorApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MediaQuery.of(context).orientation == Orientation.portrait
+    return MediaQuery
+        .of(context)
+        .orientation == Orientation.portrait
         ? _calculatorPotrait()
         : _calculatorLandscape();
   }
@@ -121,7 +123,10 @@ class _CalculatorAppState extends State<CalculatorApp> {
       child: Scaffold(
         appBar: AppBar(
           title: Text('Calculator'),
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          backgroundColor: Theme
+              .of(context)
+              .colorScheme
+              .inversePrimary,
           centerTitle: true,
           leading: Icon(Icons.arrow_back),
         ),
@@ -203,7 +208,9 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   button(
                     text: '=',
                     textColor: Colors.white,
-                    btnBgColor: Theme.of(context).primaryColorDark,
+                    btnBgColor: Theme
+                        .of(context)
+                        .primaryColorDark,
                   ),
                 ],
               ),
@@ -304,7 +311,9 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   landscapeButton(
                     text: '=',
                     textColor: Colors.white,
-                    btnBgColor: Theme.of(context).primaryColorDark,
+                    btnBgColor: Theme
+                        .of(context)
+                        .primaryColorDark,
                   ),
                 ],
               ),
